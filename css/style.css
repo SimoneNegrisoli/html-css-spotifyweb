@@ -125,6 +125,13 @@ main{
 .justify-around{
   justify-content: space-around;
 }
+.colum{
+  display: flex;
+  flex-flow: column;
+}
+.space-between{
+  justify-content: space-between;
+}
 /* ***************************************** */
 
 /* TOPBAR */
@@ -151,6 +158,9 @@ main{
 
 /* ASIDE-MENU */
 
+  #aside-menu{
+    height: calc(100% - 90px);
+  }
   #logo{
     padding-bottom: 10px;
   }
