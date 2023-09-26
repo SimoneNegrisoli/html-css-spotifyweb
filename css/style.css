@@ -17,6 +17,7 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
 }
 img{
   width: 100%;
@@ -45,6 +46,17 @@ main{
   width: 250px;
   background-color: aquamarine;
 }
+#aside-menu a{
+  color: var(--color-grey);
+}
+#aside-menu a:hover{
+  color: var(--color-white);
+}
+
+#logo img{
+  width: 70%;
+}
+
 #main-content{
   width: calc(100% - 250px);
   background-color: burlywood;
@@ -209,13 +221,14 @@ main{
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.8s ease;
 }
  .img-album:hover .play-icon{
   opacity: 1;
  }
 .play-icon:hover{
-
+  transform: translate(-50%, -50%) scale(1.1);
+  color:var(--color-highlight) ;
 }
   /* COL */
   .col{
