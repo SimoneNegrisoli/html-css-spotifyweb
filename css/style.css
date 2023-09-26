@@ -7,6 +7,7 @@
 	--color-grey: #717171;
 	--color-light-grey: #C1C1C1;
 	--color-highlight: #ADFF2F;
+  --color-navy: #080B12;
 }
 
 *{
@@ -19,6 +20,10 @@ img{
   width: 100%;
 }
 
+ul li, a{
+  text-decoration: none;
+  list-style: none;
+}
 
 
 
@@ -43,6 +48,10 @@ main{
   background-color: burlywood;
   padding: 90px 10px 10px 10px;
 }
+.half-container{
+  width: 60%;
+  margin: 0 auto;
+}
 
 /* UTILITIES */
 .debug{
@@ -50,6 +59,9 @@ main{
 }
 .text-center{
   text-align: center;
+}
+.text-upp{
+  text-transform: uppercase;
 }
 
 
@@ -103,6 +115,17 @@ main{
 .d-flex{
   display: flex;
 }
+.d-flex-reverse{
+  display: flex;
+  flex-flow: row-reverse;
+}
+.align-center{
+  align-items: center;
+  align-content: center;
+}
+.justify-around{
+  justify-content: space-around;
+}
 
 /* TOPBAR */
 #topbar{
@@ -113,6 +136,17 @@ main{
   top: 0;
   right: 0;
   z-index: 1000;
+  padding: 20px 10px 20px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#upgrade{
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 30px ;
+  cursor: pointer;
 }
 
 /* MAIN-CONTENT */
@@ -125,6 +159,7 @@ main{
   .col{
     width: calc(100% / 6);
   }
+
 
 
 
