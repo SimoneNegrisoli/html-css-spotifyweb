@@ -1,0 +1,66 @@
+/* Generals */
+:root {
+	--color-dark-color: #141922;
+	--color-dark-grey: #282828;
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+	--color-grey: #717171;
+	--color-light-grey: #C1C1C1;
+	--color-highlight: #ADFF2F;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CONTAINERS */
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  background-color: #ADFF2F;
+}
+#aside-menu{
+  width: 250px;
+  background-color: aquamarine;
+}
+#main-content{
+  width: calc(100% - 250px);
+  background-color: burlywood;
+  padding: 90px 10px 10px 10px;
+}
+
+
+
+/* Flex */
+.d-flex{
+  display: flex;
+}
+
+/* Topbar */
+#topbar{
+  width: calc(100% - 250px);
+  height: 70px;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Playbar */
+#playbar{
+  width: 100%; 
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000; 
+  background-color: var(--color-grey);
+}
