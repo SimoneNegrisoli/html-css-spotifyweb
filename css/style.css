@@ -1,4 +1,4 @@
-/* Generals */
+/* GENERALS */
 :root {
 	--color-dark-color: #141922;
 	--color-dark-grey: #282828;
@@ -14,6 +14,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img{
+  width: 100%;
+}
+
+
+
+
 /* CONTAINERS */
 .wrapper{
   width: 100%;
@@ -36,14 +44,67 @@ main{
   padding: 90px 10px 10px 10px;
 }
 
+/* UTILITIES */
+.debug{
+  border: 1px solid black;
+}
+.text-center{
+  text-align: center;
+}
 
 
-/* Flex */
+  /* Paddingg */
+  .padd{
+    padding: 10px;
+  }
+  .padd-m{
+    padding: 20px;
+  }
+  .padd-l{
+    padding: 30px;
+  }
+  .padd-xl{
+    padding: 40px;
+  }
+
+    /* Asse y */
+    .paddy{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .paddy-m{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .paddy-l{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    /* Asse x */
+    .paddx{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .paddx{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .paddx{
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  
+
+
+
+
+/* FLEX */
 .d-flex{
   display: flex;
 }
 
-/* Topbar */
+/* TOPBAR */
 #topbar{
   width: calc(100% - 250px);
   height: 70px;
@@ -54,7 +115,33 @@ main{
   z-index: 1000;
 }
 
-/* Playbar */
+/* MAIN-CONTENT */
+
+#main-content{
+  overflow-y:auto ;
+}
+
+  /* COL */
+  .col{
+    width: calc(100% / 6);
+  }
+
+
+
+
+
+/* ASIDE-MENU */
+
+
+
+
+
+
+
+
+
+
+/* PLAYBAR */
 #playbar{
   width: 100%; 
   height: 90px;
