@@ -15,7 +15,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 img{
   width: 100%;
 }
@@ -108,9 +110,6 @@ main{
     }
   
 
-
-
-
 /* FLEX */
 .d-flex{
   display: flex;
@@ -126,6 +125,7 @@ main{
 .justify-around{
   justify-content: space-around;
 }
+/* ***************************************** */
 
 /* TOPBAR */
 #topbar{
@@ -149,6 +149,16 @@ main{
   cursor: pointer;
 }
 
+/* ASIDE-MENU */
+
+  #logo{
+    padding-bottom: 10px;
+  }
+  .menu-button{
+    color: white;
+  }
+
+
 /* MAIN-CONTENT */
 
 #main-content{
@@ -165,7 +175,7 @@ main{
 
 
 
-/* ASIDE-MENU */
+
 
 
 
