@@ -127,7 +127,7 @@ main{
 }
 .colum{
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
 }
 .space-between{
   justify-content: space-between;
