@@ -80,6 +80,9 @@ main{
   .padd-xl{
     padding: 40px;
   }
+  .special-padd{
+    padding: 10px 10px 10px 0;
+  }
 
     /* Asse y */
     .paddy{
@@ -160,15 +163,26 @@ main{
 
   #aside-menu{
     height: calc(100% - 90px);
+    background-color: var(--color-black);
+    color: var(--color-grey);
+    font-size: 0.8em;
+    padding-bottom: 0;
   }
   #logo{
     padding-bottom: 10px;
   }
-  .menu-button{
+  .menu-button ul li:hover{
+    color: white;
+    cursor: pointer;
+  }
+  .playlist h4{
+    font-weight: 600;
     color: white;
   }
-
-
+  .install-app{
+    border-bottom: 1px solid var(--color-grey);
+  }
+ 
 /* MAIN-CONTENT */
 
 #main-content{
