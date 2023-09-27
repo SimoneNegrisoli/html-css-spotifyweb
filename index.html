@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
@@ -18,7 +18,7 @@
 
 <body>
     <div class="wrapper">
-
+        <!-- Topbar -->
         <div id="topbar" class="d-flex-reverse align-center">
             <div>
                 <button id="upgrade">
@@ -27,18 +27,18 @@
             </div>
         </div>
 
-        <main class="d-flex">
+        <main class="d-flex stretch">
 
-
+            <!-- Aside menu -->
             <div id="aside-menu" class="colum space-between padd-m">
 
                 <div class="menu-top">
                     <div>
-                        <div id="logo" class="">
+                        <div id="logo">
                             <img src="spotify/img/logo.svg" alt="logo">
                         </div>
-                        <div class="menu-button">
 
+                        <div class="menu-home">
                             <ul>
                                 <li class="paddy">
                                     <i class="fa-solid fa-house fa-xl"></i> Home
@@ -51,8 +51,8 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
+
                     <div class="playlist paddy">
 
                         <div class="paddy">
@@ -60,41 +60,43 @@
                                 playlist
                             </h4>
                         </div>
-                        <div class="d-flex align-center">
 
+                        <div class="d-flex align-center">
                             <div class="special-padd"><i class="fa-sharp fa-solid fa-square-plus fa-2x"></i>
                             </div>
                             <div class="special-padd"><a href="#">Crea Playlist</a></div>
-
-                        </div>
-                        <div class="paddy">
-                            <a href="#">Crea playlist</a>
-                        </div>
-                        <div class="paddy">
-                            <a href="#">Crea playlist</a>
-                        </div>
-                        <div class="paddy">
-                            <a href="#">Crea playlist</a>
-                        </div>
-                        <div class="paddy">
-                            <a href="#">Crea playlist</a>
-                        </div>
-                        <div class="paddy">
-                            <a href="#">Crea playlist</a>
-                        </div>
-                        <div class="paddy">
-                            <a href="#">Crea playlist</a>
                         </div>
 
+                        <div class="more-playlist">
+                            <div class="paddy">
+                                <a href="#">Crea playlist</a>
+                            </div>
+                            <div class="paddy">
+                                <a href="#">Crea playlist</a>
+                            </div>
+                            <div class="paddy">
+                                <a href="#">Crea playlist</a>
+                            </div>
+                            <div class="paddy">
+                                <a href="#">Crea playlist</a>
+                            </div>
+                            <div class="paddy">
+                                <a href="#">Crea playlist</a>
+                            </div>
+                            <div class="paddy">
+                                <a href="#">Crea playlist</a>
+                            </div>
 
+                        </div>
                     </div>
+
                 </div>
 
-                <calss class="menu-bottom">
+                <div class="menu-down">
                     <div class="install-app paddy">
                         <i class="fa-regular fa-circle-down "></i> Install app
                     </div>
-                    <div class="user paddy d-flex align-center">
+                    <div class="user d-flex align-center">
                         <div class="special-padd">
                             <i class="fa-regular fa-circle-user fa-2x"></i>
                         </div>
@@ -102,8 +104,7 @@
                             Jonh Doe
                         </div>
                     </div>
-                </calss>
-
+                </div>
 
             </div>
 
@@ -111,8 +112,14 @@
                 <!-- qui ho la nav bar -->
                 <nav class="padd">
                     <div class="padd half-container">
-                        <ul class="d-flex justify-around text-upp ">
-                            <li><a href="#">In evidenza</a></li>
+                        <ul class="d-flex justify-around wrap text-upp ">
+                            <li>
+                                <a href="#">
+                                    <div class="highlight">
+                                        In evidenza
+                                    </div>
+                                </a>
+                            </li>
                             <li><a href="#">Podcast</a></li>
                             <li><a href="#">Classifiche</a></li>
                             <li><a href="#">Generi e mood</a></li>
@@ -144,7 +151,7 @@
                                     Heavy Metal
                                 </strong>
                                 <br>
-                                <small>
+                                <small class="text-grey " >
                                     Subtitle
                                 </small>
                             </div>
@@ -157,12 +164,12 @@
                                     <i class="fa-regular fa-circle-play fa-3x"></i>
                                 </div>
                             </div>
-                            <div class="text-album text-center">
+                            <div class="text-album text-center paddy">
                                 <strong>
                                     Heavy Metal
                                 </strong>
                                 <br>
-                                <small>
+                                <small class="text-grey ">
                                     Subtitle
                                 </small>
                             </div>
@@ -175,12 +182,12 @@
                                     <i class="fa-regular fa-circle-play fa-3x"></i>
                                 </div>
                             </div>
-                            <div class="text-album text-center">
+                            <div class="text-album text-center paddy">
                                 <strong>
                                     Heavy Metal
                                 </strong>
                                 <br>
-                                <small>
+                                <small class="text-grey ">
                                     Subtitle
                                 </small>
                             </div>
@@ -193,12 +200,12 @@
                                     <i class="fa-regular fa-circle-play fa-3x"></i>
                                 </div>
                             </div>
-                            <div class="text-album text-center">
+                            <div class="text-album text-center paddy">
                                 <strong>
                                     Heavy Metal
                                 </strong>
                                 <br>
-                                <small>
+                                <small class="text-grey ">
                                     Subtitle
                                 </small>
                             </div>
@@ -211,12 +218,12 @@
                                     <i class="fa-regular fa-circle-play fa-3x"></i>
                                 </div>
                             </div>
-                            <div class="text-album text-center">
+                            <div class="text-album text-center paddy">
                                 <strong>
                                     Heavy Metal
                                 </strong>
                                 <br>
-                                <small>
+                                <small class="text-grey ">
                                     Subtitle
                                 </small>
                             </div>
@@ -229,12 +236,12 @@
                                     <i class="fa-regular fa-circle-play fa-3x"></i>
                                 </div>
                             </div>
-                            <div class="text-album text-center">
+                            <div class="text-album text-center paddy">
                                 <strong>
                                     Heavy Metal
                                 </strong>
                                 <br>
-                                <small>
+                                <small class="text-grey ">
                                     Subtitle
                                 </small>
                             </div>
@@ -244,9 +251,92 @@
 
                 </section>
 
+                <!-- seconda section -->
+                <section id="created-for">
+                    <div class="paddx-m">
+                        <h2>
+                            Creato per Simone
+                        </h2>
+                    </div>
+
+                    <div class="row d-flex padd">
+                        <div class="col debug padd">
+                            <div class="img-album">
+                                <img src="spotify/img/metal_lifting.jpg" alt="heavy metal">
+                                <div class="play-icon">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
+                            </div>
+                            <div class="text-album text-center paddy">
+                                <strong>
+                                    Heavy Metal
+                                </strong>
+                                <br>
+                                <small class="text-grey ">
+                                    Subtitle
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col debug padd">
+                            <div class="img-album">
+                                <img src="spotify/img/metal_lifting.jpg" alt="heavy metal">
+                                <div class="play-icon">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
+                            </div>
+                            <div class="text-album text-center paddy">
+                                <strong>
+                                    Heavy Metal
+                                </strong>
+                                <br>
+                                <small class="text-grey ">
+                                    Subtitle
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- terza section -->
+                <section id="popular-artist">
+                    <div class="paddx-m">
+                        <h2>
+                            Artisti pi&ugrave; popolari
+                        </h2>
+                    </div>
+
+                    <div class="row d-flex padd">
+                        <div class="col debug padd">
+                            <div class="img-album">
+                                <img src="spotify/img/youg.jpeg" alt="heavy metal">
+                                <div class="play-icon">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
+                            </div>
+                            <div class="text-album text-center paddy">
+                                <strong>
+                                    Heavy Metal
+                                </strong>
+                            </div>
+                        </div>
+
+                        <div class="col debug padd">
+                            <div class="img-album">
+                                <img src="spotify/img/einaudi.jpeg" alt="heavy metal">
+                                <div class="play-icon ">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
+                            </div>
+                            <div class="text-album text-center paddy">
+                                <strong>
+                                    Heavy Metal
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- queste section saranno uguali alla prima -->
-                <section></section>
-                <section></section>
+               
 
             </div>
 
@@ -254,7 +344,7 @@
 
 
 
-
+        <!-- playbar -->
 
         <div id="playbar">
             playbar
