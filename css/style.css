@@ -96,6 +96,9 @@ main{
   .special-padd{
     padding: 10px 10px 10px 0;
   }
+  .padd-l{
+    padding-left: 10px;
+  }
 
     /* Asse y */
     .paddy{
@@ -421,4 +424,22 @@ MEDIA QUERY
   right: 0;
   z-index: 1000; 
   background-color: var(--color-grey);
+  padding: 10px;
+}
+
+#play-left{
+  width: 250px;
+}
+
+#album-played{
+  width: 50px;
+}
+
+
+#play-center{
+  width: 30%;
+}
+
+#play-right{
+  width: 250px;
 }
