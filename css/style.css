@@ -210,7 +210,9 @@ main{
   }
 
   .more-playlist{
+    height: 80%;
     overflow-y: auto;
+    sc
   }
 
 
@@ -271,14 +273,10 @@ main section{
 
 /* section 3 */
 
-#popular-artist .img-album{
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-}
+
 #popular-artist img {
   width: 100%;
+  border-radius: 50%;
 }
 #popular-artist{
   color: var(--color-white);
