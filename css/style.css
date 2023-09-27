@@ -293,7 +293,9 @@ main section{
 }
 
 
-/* MEDIA QUERY */
+/*************************** 
+MEDIA QUERY 
+****************************/
 
 @media screen and (max-width:1200px){
   
@@ -333,7 +335,13 @@ main section{
   #popular-artist  .col{
     width: calc(100% / 2);
   }
- 
+  .half-container{
+    width: 80%;
+  }
+  #main-content ul {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
 }
 @media screen and (max-width:576px){
 
@@ -343,7 +351,6 @@ main section{
   #logo-small{
     display: flex;
     width: 30px;
-    /* max-width: 50px; */
   }
   
   #aside-menu .menu-home span{
@@ -365,17 +372,41 @@ main section{
     width: calc(100% - 15%);
   }
 
-  #main-content ul{
-    flex-direction: column;
-    justify-items: flex-start;
-  }
   #main-content ul li {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
+  }
+  .half-container{
+    width: 90%;
   }
 }
 
+@media screen and (max-width:400px){
 
+  .half-container{
+    width: 100%;
+  }
+  #recently .col{
+    width: 100%;
+  }
+  #created-for .col{
+    width: 100%;
+  }
+  #popular-artist  .col{
+    width: 100%;
+  }
+  #logo-small{
+    width: 15px;
+  }
 
+  #main-content nav .half-container{
+    display: none;
+  }
+
+  #main-content nav .hide-menu{
+    display: flex;
+    justify-content: center;
+  }
+}
 
 
 
