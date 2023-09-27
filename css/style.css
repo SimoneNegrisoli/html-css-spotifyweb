@@ -96,7 +96,7 @@ main{
   .special-padd{
     padding: 10px 10px 10px 0;
   }
-  .padd-l{
+  .padd-left{
     padding-left: 10px;
   }
 
@@ -442,4 +442,5 @@ MEDIA QUERY
 
 #play-right{
   width: 250px;
+  color: var(--color-white);
 }
