@@ -53,7 +53,7 @@ main{
   color: var(--color-white);
 }
 
-#logo img{
+#logo-wide{
   width: 60%;
 }
 
@@ -191,12 +191,22 @@ main{
   #logo{
     padding-bottom: 10px;
   }
+
+  #logo-small{
+    display: none;
+  }
+
   .menu-down{
     height: 80px;
   }
   .menu-top{
     height: calc(100% - 80px);
   }
+  .menu-top .menu-home img{
+    max-width: 25px;
+
+  }
+/* ***************************** */
   .menu-down ul li:hover{
     color: white;
     cursor: pointer;
@@ -313,6 +323,56 @@ main section{
  
 }
 
+@media screen and (max-width:768px){
+  #recently .col{
+    width: calc(100% / 2);
+  }
+  #created-for .col{
+    width: calc(100% / 2);
+  }
+  #popular-artist  .col{
+    width: calc(100% / 2);
+  }
+ 
+}
+@media screen and (max-width:576px){
+
+  #logo-wide{
+    display: none;
+  }
+  #logo-small{
+    display: flex;
+    width: 30px;
+    /* max-width: 50px; */
+  }
+  
+  #aside-menu .menu-home span{
+    display: none;
+  }
+  #aside-menu .playlist{
+    display: none;
+  }
+  #aside-menu .menu-down{
+    display: none;
+  }
+  #aside-menu{
+    width: 15%;
+  }
+  #main-content{
+    width: calc(100% - 15%);
+  }
+  #topbar{
+    width: calc(100% - 15%);
+  }
+
+  #main-content ul{
+    flex-direction: column;
+    justify-items: flex-start;
+  }
+  #main-content ul li {
+    width: calc(100% / 3);
+  }
+}
 
 
 
