@@ -285,8 +285,32 @@ main section{
 
 /* MEDIA QUERY */
 
-@media screen and (max-width:992px){
+@media screen and (max-width:1200px){
   
+  #recently .col{
+    width: calc(100% / 4);
+  }
+  #created-for .col{
+    width: calc(100% / 4);
+  }
+  #popular-artist .col{
+    width: calc(100% / 4);
+  }
+  .row{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:992px){
+  #recently .col{
+    width: calc(100% / 3);
+  }
+  #created-for .col{
+    width: calc(100% / 3);
+  }
+  #popular-artist  .col{
+    width: calc(100% / 3);
+  }
+ 
 }
 
 
