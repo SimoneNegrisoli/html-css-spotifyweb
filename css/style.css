@@ -67,6 +67,10 @@ main{
   margin: 0 auto;
 }
 
+.hide-container{
+  display: inline-flex;
+}
+
 /* UTILITIES */
 
 .text-center{
@@ -149,6 +153,7 @@ main{
 .justify-around{
   justify-content: space-around;
 }
+
 .wrap{
   flex-wrap: wrap;
 }
@@ -162,6 +167,11 @@ main{
 .space-between{
   justify-content: space-between;
 }
+
+.flex-inline{
+  display: inline-flex;
+}
+
 /* ***************************************** */
 
 /* TOPBAR */
@@ -297,9 +307,9 @@ main .col:hover{
   position: relative;
 }
 
-.highlighted-hide{
+/* .highlighted-hide{
   display: none;
-}
+} */
 
 .highlighted{
   background: transparent;
@@ -692,7 +702,9 @@ MEDIA QUERY
   .hide-menu-text li:hover .highlighted-hide{
     background-color: var(--color-highlight);
   }
-  
+  .hide-container a{
+    padding-bottom: 5px;
+  }
   
 }
 
