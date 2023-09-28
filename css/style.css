@@ -293,6 +293,10 @@ main .col:hover{
 .hide-menu, .hide-menu-text{
   display: none;
 }
+.hide-menu-text li a{
+  position: relative;
+}
+
 .highlighted-hide{
   display: none;
 }
@@ -679,8 +683,10 @@ MEDIA QUERY
     background: transparent;
     border-bottom: 2px solid transparent;
     width: 30px;
-    margin: 0 auto;
-    display: block;
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
   }
   
   .hide-menu-text li:hover .highlighted-hide{
