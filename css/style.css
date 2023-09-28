@@ -184,8 +184,13 @@ main{
   padding: 10px 30px;
   border-radius: 30px ;
   cursor: pointer;
+  transition: all 0.5s;
 }
-
+#topbar button:hover{
+  color: var(--color-highlight);
+  border: 1px solid var(--color-highlight);
+  transform: scale(1.02);
+}
 /* ******************* 
 ASIDE-MENU 
 ******************** */
@@ -196,7 +201,6 @@ ASIDE-MENU
     color: var(--color-light-grey);
     font-size: 0.8em;
     padding-bottom: 0;
-  
   }
   #logo{
     padding-bottom: 10px;
@@ -221,6 +225,10 @@ ASIDE-MENU
     background-color: transparent;
     height: 2em;
   }
+  .menu-home ul li, .highlighted-side{
+    transition: all 0.15s;
+  }
+  
   .menu-home ul li:hover .highlighted-side{
     background-color: var(--color-highlight);
   }
@@ -292,6 +300,10 @@ main .col:hover{
   width: 40px;
   margin: 0 auto;
   margin-top: 5px;
+}
+
+nav li, .highlighted{
+  transition: all 0.2s;
 }
 nav li:hover{
   cursor: pointer;
