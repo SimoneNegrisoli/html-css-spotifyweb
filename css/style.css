@@ -257,6 +257,14 @@ main section{
   color: gray;
 }
 
+main .col:hover{
+  cursor: pointer;
+}
+
+.hide-menu{
+  display: none;
+}
+
 #main-content nav .highlight:hover{
   box-shadow: 0 2px 0 var(--color-highlight);
 }
@@ -311,9 +319,22 @@ main section{
 #play-left{
   width: 250px;
 }
+#play-left h5{
+  color: var(--color-white);
+  cursor: pointer;
+}
+#play-left i{
+  color: var(--color-dark-grey);
+  cursor: pointer;
+}
+.play-album-title small{
+  color: var(--color-dark-grey);
+  cursor: pointer;
+}
 
 #album-played{
   width: 50px;
+  transition: all 2s;
 }
 
 .full-heart{
@@ -322,12 +343,11 @@ main section{
 #play-left i:hover{
   transform: scale(1.2);
 }
-/* #play-left .empity-heart:hover{
-  display: none;
+#album-played img:hover{
+  filter: opacity(0.6);
+  cursor: pointer;
+  transform: scale(1.2);
 }
-#play-left .fa-heart:hover .full-heart{
-  display: flex;
-} */
 
 
 
@@ -346,8 +366,6 @@ main section{
   color: var(--color-highlight);
 }
 
-
-
 .play-center-down{
   width: 100%;
   padding-top: 10px;
@@ -360,6 +378,7 @@ main section{
   transform: scale(1.2);
   color: var(--color-highlight);
 }
+
 
 #play-right{
   width: 250px;
