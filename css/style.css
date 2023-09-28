@@ -290,7 +290,10 @@ main .col:hover{
   cursor: pointer;
 }
 
-.hide-menu{
+.hide-menu, .hide-menu-text{
+  display: none;
+}
+.highlighted-hide{
   display: none;
 }
 
@@ -646,10 +649,6 @@ MEDIA QUERY
     display: none;
   }
 
-  #main-content nav .hide-menu{
-    display: flex;
-    justify-content: center;
-  }
   #play-center{
     width: 100%;
   }
@@ -661,6 +660,34 @@ MEDIA QUERY
     display: flex;
   }
 
+  .hide-menu{
+    display: flex;
+    justify-content: center;
+  }
+  .hide-menu:hover{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  
+  .hide-menu:hover .hide-menu-text{
+    display:flex ;
+    border: 1px solid #303C52;
+    background-color: #303C52;
+  }
+  .highlighted-hide{
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    width: 30px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .hide-menu-text li:hover .highlighted-hide{
+    background-color: var(--color-highlight);
+  }
+  
+  
 }
 
 
