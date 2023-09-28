@@ -67,9 +67,7 @@ main{
 }
 
 /* UTILITIES */
-/* .debug{
-  border: 1px solid black;
-} */
+
 .text-center{
   text-align: center;
 }
@@ -98,6 +96,9 @@ main{
   }
   .padd-left{
     padding-left: 10px;
+  }
+  .padd-right{
+    padding-right: 10px;
   }
 
     /* Asse y */
@@ -140,6 +141,9 @@ main{
 .align-center{
   align-items: center;
   align-content: center;
+}
+.align-base{
+  align-items: baseline;
 }
 .justify-around{
   justify-content: space-around;
@@ -186,7 +190,7 @@ main{
   #aside-menu{
     height: 100%;
     background-color: var(--color-black);
-    color: var(--color-grey);
+    color: var(--color-light-grey);
     font-size: 0.8em;
     padding-bottom: 0;
   
@@ -209,7 +213,6 @@ main{
     max-width: 25px;
 
   }
-/* ***************************** */
   .menu-down ul li:hover{
     color: white;
     cursor: pointer;
@@ -236,15 +239,17 @@ main{
   .install-app{
     border-bottom: 1px solid var(--color-grey);
   }
- 
-/* MAIN-CONTENT */
+
+/* ************************* 
+MAIN-CONTENT 
+************************* */
 
 #main-content{
   overflow-y:auto ;
   background-color: var(--color-dark-color);
 }
 #main-content nav{
-  color: var(--color-grey);
+  color: var(--color-light-grey);
 }
 #main-content nav ul li{
   padding: 5px;
@@ -254,7 +259,7 @@ main section{
 }
 
 #main-content nav a{
-  color: gray;
+  color: var(--color-light-grey);
 }
 
 main .col:hover{
@@ -265,8 +270,15 @@ main .col:hover{
   display: none;
 }
 
-#main-content nav .highlight:hover{
-  box-shadow: 0 2px 0 var(--color-highlight);
+.highlighted{
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+nav li:hover .highlighted{
+  background-color: var(--color-highlight);
 }
 
   /* SECTION1 */
@@ -374,6 +386,22 @@ main .col:hover{
   width: 100%;
 }
 
+#play-left i{
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 5px;
+}
+#play-center i{
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 5px;
+}
+#play-right i{
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 5px;
+}
+
 #play-right i:hover{
   transform: scale(1.2);
   color: var(--color-highlight);
@@ -396,13 +424,22 @@ main .col:hover{
   border-radius: 5px;
   background-color: var(--color-grey);
   opacity: 0.7;
-  transition: all 0.3s;
 }
+
+
 #music-slider:hover{
   opacity: 1;
   cursor: pointer;
 }
 
+#volume-slider{
+  appearance: none;
+  width: 50%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--color-grey);
+  opacity: 0.7;
+}
 
 
 /*************************** 
@@ -454,7 +491,6 @@ MEDIA QUERY
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
-
   #play-left i{
     display: none;
   }
@@ -463,6 +499,18 @@ MEDIA QUERY
   }
   #play-right div{
     justify-content: flex-end;
+  }
+  .play-center-down span{
+    display: none;
+  }
+  #play-center{
+    width: 40%;
+  }
+  #play-right{
+    width: 20%;
+  }
+  #play-left{
+    width: 20%;
   }
 }
 
