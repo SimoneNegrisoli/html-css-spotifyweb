@@ -296,6 +296,81 @@ main section{
 }
 
 
+/* PLAYBAR */
+#playbar{
+  width: 100%; 
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000; 
+  background-color: var(--color-grey);
+  padding: 10px;
+}
+
+#play-left{
+  width: 250px;
+}
+
+#album-played{
+  width: 50px;
+}
+
+.full-heart{
+  display: none;
+}
+#play-left i:hover{
+  transform: scale(1.2);
+}
+/* #play-left .empity-heart:hover{
+  display: none;
+}
+#play-left .fa-heart:hover .full-heart{
+  display: flex;
+} */
+
+
+
+#play-center{
+  width: 30%;
+  color: var(--color-white);
+  transition: transform (2s);
+}
+.play-center-top{
+  width: 60%;
+  padding: 10px 0;
+
+}
+.play-center-top i:hover{
+  transform: scale(1.2);
+  color: var(--color-highlight);
+}
+
+
+
+.play-center-down{
+  width: 100%;
+  padding-top: 10px;
+}
+.play-center-down input{
+  width: 100%;
+}
+
+#play-right i:hover{
+  transform: scale(1.2);
+  color: var(--color-highlight);
+}
+
+#play-right{
+  width: 250px;
+  color: var(--color-white);
+}
+
+
+
+
+
+
 /*************************** 
 MEDIA QUERY 
 ****************************/
@@ -345,7 +420,20 @@ MEDIA QUERY
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
+
+  #play-left i{
+    display: none;
+  }
+  #play-right input{
+    display: none;
+  }
+  #play-right div{
+    justify-content: flex-end;
+  }
 }
+
+
+
 @media screen and (max-width:576px){
 
   #logo-wide{
@@ -381,6 +469,18 @@ MEDIA QUERY
   .half-container{
     width: 90%;
   }
+  .play-center-down{
+    display: none;
+  }
+  .play-center-top {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
+
 }
 
 @media screen and (max-width:400px){
@@ -415,32 +515,3 @@ MEDIA QUERY
 
 
 
-/* PLAYBAR */
-#playbar{
-  width: 100%; 
-  height: 90px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 1000; 
-  background-color: var(--color-grey);
-  padding: 10px;
-}
-
-#play-left{
-  width: 250px;
-}
-
-#album-played{
-  width: 50px;
-}
-
-
-#play-center{
-  width: 30%;
-}
-
-#play-right{
-  width: 250px;
-  color: var(--color-white);
-}
