@@ -365,7 +365,9 @@ main section{
   width: 250px;
   color: var(--color-white);
 }
-
+.play-right-hidden{
+  display: none;
+}
 
 
 
@@ -474,10 +476,11 @@ MEDIA QUERY
   }
   .play-center-top {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
+  .play-album-title{
+    display: none;
+  }
 
 
 
@@ -498,7 +501,7 @@ MEDIA QUERY
     width: 100%;
   }
   #logo-small{
-    width: 15px;
+    width: 20px;
   }
 
   #main-content nav .half-container{
@@ -509,6 +512,17 @@ MEDIA QUERY
     display: flex;
     justify-content: center;
   }
+  #play-center{
+    width: 100%;
+  }
+
+  .i-right{
+    display: none;
+  }
+  .play-right-hidden{
+    display: flex;
+  }
+
 }
 
 
