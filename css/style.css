@@ -386,11 +386,32 @@ PLAYBAR
   transition: all 2s;
 }
 
-.full-heart{
+#full-heart , #full-folder{
   display: none;
 }
+.icon-hidden:hover #empity-heart{
+  display: none;
+}
+.icon-hidden:hover #full-heart{
+  display: flex;
+  color: red;
+}
+
+.icon-hidden:hover #empity-folder{
+  display: none;
+}
+.icon-hidden:hover #full-folder{
+  display: flex;
+  color: #174D98;
+}
+
+
+
 #play-left i:hover{
   transform: scale(1.2);
+}
+#album-played img{
+  transition: all 0.5s;
 }
 #album-played img:hover{
   filter: opacity(0.6);
